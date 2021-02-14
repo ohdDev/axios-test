@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Axios Test</title>
+
+    <!-- Bootstrap -->
+    <link href="https://bootswatch.com/4/cerulean/bootstrap.min.css" rel="stylesheet">
+
+  </head>
+  <body>
+       <!-- Start of Container  -->
+      <div class="container">
+        <h1>Axios Demo <small>by ohoud</small></h1>
+
+        <!-- Start of page banner -->
+        <div class="jumbotron">
+            <h1>Welcome tp Axios</h1>
+            <h4>Lorem ipsum, dolor sit amet consectetur adipisicing.</h4>
+        </div>
+
+
+        <!-- Start of Cards -->
+        <!-- Start of Get Request Car -->
+        <div class="card">
+            <div class="card-header text-white bg-primary">Get Request</div>
+            <div class="card-body">
+                <button class="btn btn-primary" onclick="performGetRequest1()">Get Todos</button>
+                <button class="btn btn-warning" onclick="clearOutput()">Clear</button>
+                <div class="card-body" id="getResult1"></div>
+            </div>
+        </div>
+
+        <!-- Start of Get Request With Parameters Card -->
+        <div class="card">
+            <div class="card-header text-white bg-primary">Get Request with parameters</div>
+            <div class="card-body">
+                <input type="text" class="form-control" id="todoId" placeholder="Todo Id ..."><br>
+                <button class="btn btn-primary" onclick="performGetRequest2()">Get Todos</button>
+                <button class="btn btn-warning" onclick="clearOutput()">Clear</button>
+                <div class="card-body" id="getResult2"></div>
+            </div>
+        </div>
+
+        <!-- Start of Post Request Card -->
+        <div class="card">
+            <div class="card-header text-white bg-primary">Post Request</div>
+            <div class="card-body">
+                <form id="todoInputForm">
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="todoTitle" placeholder="Todo Title...">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send</button>
+                </form><br>
+                <button class="btn btn-warning" onclick="clearOutput()">Clear</button>
+                <div class="card-body" id="postResult"></div>
+            </div>
+        </div>
+
+      </div>
+    <!-- End of Container  -->
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
